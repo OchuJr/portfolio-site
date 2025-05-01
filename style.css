@@ -24,7 +24,6 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -62,7 +61,6 @@ body.dark-mode .header {
   font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
   padding: 4rem 2rem;
   text-align: center;
@@ -83,7 +81,6 @@ body.dark-mode .header {
   cursor: pointer;
 }
 
-/* Sections */
 .section {
   padding: 3rem 2rem;
 }
