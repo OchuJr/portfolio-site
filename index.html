@@ -1,146 +1,83 @@
-/* style.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dullah Ochu | Ochu Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">OchuStudio™</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="cta">Start Project</a>
+  </header>
 
-:root {
-  --bg-light: #e9f0e5;
-  --bg-dark: #1f2b23;
-  --text-light: #1f2b23;
-  --text-dark: #e9f0e5;
-  --accent: #1f2b23;
-  --card-bg-light: #ffffff;
-  --card-bg-dark: #2f3e35;
-  --transition: 0.3s ease;
-}
+  <section class="hero">
+    <h1>Creative Digital Solutions for Bold Brands</h1>
+    <p>By Dullah Ochu — Photographer, UI/UX and Graphic Designer</p>
+    <button class="btn">Explore My Work</button>
+  </section>
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-light);
-  transition: background-color var(--transition), color var(--transition);
-}
+  <section id="services" class="section">
+    <h2>What I Do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Brand Identity Design</h3>
+        <p>Logos, color palettes, and cohesive visual identities for strong, memorable brands.</p>
+      </div>
+      <div class="card">
+        <h3>UX/UI Design</h3>
+        <p>Clean, user-focused interfaces for web and mobile apps that convert and engage.</p>
+      </div>
+      <div class="card">
+        <h3>Photography</h3>
+        <p>Street and commercial photography that captures your brand's raw, real essence.</p>
+      </div>
+    </div>
+  </section>
 
-body.dark-mode {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
+  <section id="clients" class="section">
+    <h2>Brands I've Worked With</h2>
+    <div class="grid logos">
+      <img src="images/company1.png" alt="Company 1" />
+      <img src="images/company2.png" alt="Company 2" />
+      <img src="images/company3.png" alt="Company 3" />
+      <img src="images/company4.png" alt="Company 4" />
+    </div>
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--bg-light);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+    <h2>Client Reviews</h2>
+    <div class="grid">
+      <div class="review">
+        <p>"Dullah transformed our brand with stunning visuals and clear strategy. Highly recommend!"</p>
+        <strong>- ZedTech Solutions</strong>
+      </div>
+      <div class="review">
+        <p>"His photography captured our culture perfectly. The reels brought life to our Instagram."</p>
+        <strong>- AfriCultura</strong>
+      </div>
+      <div class="review">
+        <p>"Ochu Studio delivered a user-friendly website that increased engagement instantly."</p>
+        <strong>- SmartFarm</strong>
+      </div>
+    </div>
+  </section>
 
-body.dark-mode .header {
-  background-color: var(--bg-dark);
-}
+  <section id="contact" class="section contact">
+    <h2>Let's Work Together</h2>
+    <p>Email: <a href="mailto:ochustudio@gmail.com">ochustudio@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/255716867185">+255 716 867 185</a></p>
+  </section>
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+  <footer class="footer">
+    <p>&copy; 2025 Ochu Studio. All rights reserved.</p>
+  </footer>
 
-.nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: color var(--transition);
-}
-
-.cta {
-  padding: 0.5rem 1rem;
-  background: var(--accent);
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero .btn {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.section {
-  padding: 3rem 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.card, .review {
-  background: var(--card-bg-light);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform var(--transition);
-}
-
-body.dark-mode .card,
-body.dark-mode .review {
-  background: var(--card-bg-dark);
-}
-
-.card:hover, .review:hover {
-  transform: translateY(-5px);
-}
-
-.logos img {
-  max-width: 100px;
-  margin: auto;
-}
-
-.contact a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer {
-  padding: 1rem 2rem;
-  text-align: center;
-  background-color: var(--bg-light);
-}
-
-body.dark-mode .footer {
-  background-color: var(--bg-dark);
-}
-
-/* Toggle Button */
-.toggle-mode {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: var(--accent);
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
+  <script src="script.js"></script>
+</body>
+</html>
