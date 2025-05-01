@@ -24,6 +24,21 @@ body.dark-mode {
   color: var(--text-dark);
 }
 
+body.dark-mode .header,
+body.dark-mode .footer {
+  background-color: var(--bg-dark);
+}
+
+body.dark-mode .card,
+body.dark-mode .review {
+  background: var(--card-bg-dark);
+}
+
+body.dark-mode .contact-link {
+  color: var(--text-dark);
+}
+
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,17 +51,17 @@ body.dark-mode {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-body.dark-mode .header {
-  background-color: var(--bg-dark);
-}
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
 .nav a {
-  margin: 0 1rem;
   text-decoration: none;
   color: inherit;
   transition: color var(--transition);
@@ -61,6 +76,15 @@ body.dark-mode .header {
   font-weight: bold;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
 .hero {
   padding: 4rem 2rem;
   text-align: center;
@@ -81,6 +105,7 @@ body.dark-mode .header {
   cursor: pointer;
 }
 
+/* Sections */
 .section {
   padding: 3rem 2rem;
 }
@@ -100,11 +125,6 @@ body.dark-mode .header {
   transition: transform var(--transition);
 }
 
-body.dark-mode .card,
-body.dark-mode .review {
-  background: var(--card-bg-dark);
-}
-
 .card:hover, .review:hover {
   transform: translateY(-5px);
 }
@@ -115,19 +135,19 @@ body.dark-mode .review {
 }
 
 .contact a {
-  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
+}
+
+.contact-link {
+  color: var(--accent);
+  transition: color var(--transition);
 }
 
 .footer {
   padding: 1rem 2rem;
   text-align: center;
   background-color: var(--bg-light);
-}
-
-body.dark-mode .footer {
-  background-color: var(--bg-dark);
 }
 
 /* Toggle Button */
@@ -143,4 +163,27 @@ body.dark-mode .footer {
   cursor: pointer;
   font-size: 0.9rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--bg-light);
+    padding: 1rem;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  body.dark-mode .nav {
+    background: var(--bg-dark);
+  }
 }
