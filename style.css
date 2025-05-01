@@ -177,12 +177,15 @@ body.dark-mode .contact-link {
     background: var(--bg-light);
     padding: 1rem;
   }
+
   .nav.active {
     display: flex;
   }
+
   .menu-toggle {
     display: block;
   }
+
   body.dark-mode .nav {
     background: var(--bg-dark);
   }
