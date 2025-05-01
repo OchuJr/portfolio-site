@@ -1,17 +1,18 @@
 // script.js
 
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.createElement("button");
-  toggleBtn.textContent = "Toggle Dark Mode";
-  toggleBtn.className = "toggle-mode";
-  document.body.appendChild(toggleBtn);
+// Dark mode toggle (optional if you implement a switch)
+const body = document.body;
 
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
-  });
+// Mobile nav toggle
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('navbar');
 
-  if (localStorage.getItem("dark-mode") === "true") {
-    document.body.classList.add("dark-mode");
-  }
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
 });
+
+// Optional dark mode toggle
+// Uncomment and attach this to a button if needed
+// document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+//   body.classList.toggle('dark-mode');
+// });
