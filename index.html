@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dullah Ochu – Digital Agency</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dullah Ochu - Digital Agency</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Dullah Ochu</div>
-    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
-      <a href="#contact">Contact</a>
+  <header>
+    <nav>
+      <h1 class="logo">DULLAH OCHU</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">Menu</button>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>I Build & Design for Digital</h1>
-    <p>Crafting beautiful digital experiences for brands with design, photography, and UX strategy.</p>
-    <button class="btn">Work With Me</button>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h2>Hey, I'm Dullah Ochu,</h2>
+        <h1>A UI/UX & Brand Designer</h1>
+        <p>Transforming ideas into visually stunning designs that captivate, engage, and deliver results.</p>
+        <a href="#contact" class="btn-primary">Contact Me</a>
+      </div>
+    </section>
 
-  <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>I'm Dullah Ochu, a multidisciplinary designer and photographer. I create engaging digital designs that tell stories and help brands thrive online.</p>
-  </section>
+    <section id="about" class="features">
+      <h2>What I Do</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>User-Centered Design</h3>
+          <p>Crafting intuitive and seamless user experiences tailored for your audience.</p>
+        </div>
+        <div class="feature">
+          <h3>Brand Identity & Strategy</h3>
+          <p>Building strong, recognizable brands that convey your message effectively.</p>
+        </div>
+        <div class="feature">
+          <h3>Responsive & Modern UI</h3>
+          <p>Pixel-perfect designs optimized for all devices and screen sizes.</p>
+        </div>
+        <div class="feature">
+          <h3>Seamless Prototyping</h3>
+          <p>Bringing ideas to life with interactive and functional prototypes.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="services" class="section services">
-    <h2>Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>UI/UX Design</h3>
-        <p>Designing intuitive interfaces that elevate user experience.</p>
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <img src="assets/soundwave.jpg" alt="Soundwave">
+        <h3>Soundwave</h3>
+        <p>Designing an innovative audio tech experience.</p>
       </div>
-      <div class="card">
-        <h3>Graphic Design</h3>
-        <p>Creating logos, branding, and marketing materials that speak volumes.</p>
-      </div>
-      <div class="card">
-        <h3>Photography</h3>
-        <p>Professional photo shoots to enhance your visual content and brand image.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="clients" class="section clients">
-    <h2>Clients & Reviews</h2>
-    <div class="grid">
-      <div class="review">
-        <p>“Dullah exceeded expectations! Our UX has never looked better.”</p>
-        <strong>– TanzaPay</strong>
+    <section id="testimonials" class="testimonials">
+      <h2>Trusted By</h2>
+      <div class="logos">
+        <div class="logo">Frame Blox</div>
+        <div class="logo">Supa Blox</div>
+        <div class="logo">Hyper Blox</div>
+        <div class="logo">Ultra Blox</div>
       </div>
-      <div class="review">
-        <p>“The photos brought our campaign to life. 10/10!”</p>
-        <strong>– DarMarket</strong>
-      </div>
-      <div class="review">
-        <p>“His graphic design completely rebranded us.”</p>
-        <strong>– AfroWebs</strong>
-      </div>
-    </div>
-  </section>
+      <p>“Dullah is a creative genius. His designs transformed our brand!” - Frame Blox</p>
+    </section>
 
-  <section id="contact" class="section contact">
-    <h2>Let's Work Together</h2>
-    <p>Email: <a class="contact-link" href="mailto:ochustudio@gmail.com">ochustudio@gmail.com</a></p>
-    <p>WhatsApp: <a class="contact-link" href="https://wa.me/255716867185">+255 716 867 185</a></p>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:ochustudio@gmail.com">ochustudio@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/255716867185">+255 716 867 185</a></p>
+    </section>
+  </main>
 
-  <footer class="footer">
-    <p>© 2025 Dullah Ochu Studio</p>
+  <footer>
+    <p>&copy; 2025 Dullah Ochu | Digital Agency</p>
   </footer>
 
-  <button class="toggle-mode">Toggle Dark Mode</button>
   <script src="script.js"></script>
 </body>
 </html>
